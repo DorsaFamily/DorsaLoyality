@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:background="@drawable/loyalty_bgr_round_ff"
+    android:padding="15dp">
+
+    <com.rasa.customView.CustomTextView
+        android:id="@+id/dialog_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="شماره تلفن همراه خود را وارد نمایید"
+        android:textColor="#0e42a7"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <com.rasa.customView.CustomTextView
+        android:id="@+id/title_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_register_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxWidth="350dp"
+        android:text="کد تخفیف را وارد نمایید"
+        android:textColor="@color/loyalty_colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <com.rasa.customView.CustomTextView
+        android:id="@+id/loyalty_text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="خطا در ارتباط با اینترنت"
+        android:textColor="#ff4a4a"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <com.rasa.customView.CEditTextBold
+        android:id="@+id/loyalty_text_code"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loyalty_text_error"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:hint="کد تخفیف"
+        android:inputType="text"
+        android:lines="1"
+        android:padding="5dp"
+        android:textColor="@color/loyalty_colorPrimaryDark"
+        android:textColorHint="@color/loyalty_colorPrimaryLight"
+        android:background="@color/loyalty_colorWhite"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loyalty_text_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.rasa.customView.CButton
+            android:id="@+id/loyalty_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/loyalty_btn_round_stroke"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="انصراف"
+            android:textColor="@color/loyalty_colorPrimary"
+            android:textSize="12sp" />
+
+        <com.rasa.customView.CButton
+            android:id="@+id/loyalty_btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/loyalty_btn_round_solid"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="ارسال"
+            android:textColor="@color/loyalty_colorWhite"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="loyalty_colorPrimary">#583a8c</color>
+    <color name="loyalty_colorPrimaryLight">#9f8cc1</color>
+    <color name="loyalty_colorPrimaryDark">#362457</color>
+    <color name="loyalty_colorAccent">#ea2d29</color>
+    <color name="loyalty_colorWhite">#FFFFFF</color>
+    <color name="loyalty_dark_trans">#80bebebe</color>
+</resources>

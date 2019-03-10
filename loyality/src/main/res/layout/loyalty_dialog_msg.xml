@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:layout_gravity="center"
+    android:padding="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loyalty_bgr_round_ff"
+        android:paddingBottom="10dp"
+        >
+
+        <com.rasa.customView.CustomTextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="@color/loyalty_colorPrimary"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView24"
+            android:layout_marginTop="20dp"
+            >
+            <com.rasa.customView.CButton
+                android:id="@+id/button3"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/loyalty_btn_round_solid"
+                android:textColor="@color/loyalty_colorWhite"
+                android:text="تایید"
+                android:layout_margin="5dp"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:textSize="12sp" />
+
+            <com.rasa.customView.CButton
+                android:id="@+id/button4"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/button3"
+                android:background="@drawable/loyalty_btn_round_solid"
+                android:stateListAnimator="@null"
+                android:text="انصراف"
+                android:layout_margin="5dp"
+                android:elevation="2dp"
+                android:textColor="@color/loyalty_colorWhite"
+                android:textSize="12sp"
+                android:visibility="visible"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <com.rasa.customView.CButton
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="2dp"
+            android:layout_margin="5dp"
+            android:layout_alignRight="@+id/rel_btns"
+            android:layout_alignLeft="@+id/rel_btns"
+            android:layout_below="@+id/rel_btns"
+            android:background="@drawable/loyalty_btn_round_solid"
+            android:stateListAnimator="@null"
+            android:text="سایر"
+            android:textColor="@color/loyalty_colorWhite"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="LoyaltyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/loyalty_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/loyalty_colorPrimaryDark</item>
+        <item name="colorAccent">@color/loyalty_colorAccent</item>
+    </style>
+
+    <style name="LoyaltyTranslucentTheme" parent="LoyaltyTheme">
+
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+
+
+
+    </style>
+
+
+
+</resources>
