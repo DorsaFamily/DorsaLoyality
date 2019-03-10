@@ -24,4 +24,4 @@ Follow below steps to add **DorsaLoyality** to your app :
                             }
       ```
 
-(Check sample for more details).                     
+(Check <a href="https://github.com/DorsaFamily/DorsaLoyality/blob/master/sample/src/main/java/com/rasa/dorsaloyalty/MainActivity.java">sample</a> for more details).                     
