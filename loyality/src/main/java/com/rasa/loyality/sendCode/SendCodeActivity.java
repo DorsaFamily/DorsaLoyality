@@ -45,6 +45,7 @@ public class SendCodeActivity extends AppCompatActivity implements SendCodeFragm
             @Override
             public void onSuccessCheckValidation() {
                 pDialog.cancel();
+                onSuccess();
             }
 
             @Override
