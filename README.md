@@ -19,7 +19,7 @@ Follow below steps to add **DorsaLoyality** to your app :
   2. Add the dependency :
       ```gradle
           dependencies {
-			        implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+			        
                       implementation 'com.github.DorsaFamily:DorsaLoyality:LAST VERSION'
                             }
       ```
