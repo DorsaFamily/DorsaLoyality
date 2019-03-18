@@ -2,7 +2,9 @@ package com.rasa.loyality.utils.customView.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -81,6 +83,20 @@ public class DialogMessage extends Dialog {
     public void setMessage(String message) {
         if (message != null) {
             textMessage.setText(message);
+
+            if(message.contains("http")){
+                textMessage.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String url = "http://2rsa.ir/fandoghestan.html";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        getContext().startActivity(i);
+                    }
+                });
+
+            }
+
         }
     }
 
@@ -98,6 +114,22 @@ public class DialogMessage extends Dialog {
         this.onClickExtra = onClickExtra;
         setShowExtraBtn(true);
         btnExtra.setText(text);
+    }
+
+    public void setShowOkButton(boolean show){
+        if(show){
+            btnOk.setVisibility(View.VISIBLE);
+        }else{
+            btnOk.setVisibility(View.GONE);
+        }
+    }
+
+    public void setShowCancelButton(boolean show){
+        if(show){
+            btnCancel.setVisibility(View.VISIBLE);
+        }else{
+            btnCancel.setVisibility(View.GONE);
+        }
     }
 
     public void setShowExtraBtn(boolean show){

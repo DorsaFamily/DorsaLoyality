@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="شماره تلفن همراه خود را وارد نمایید"
+        android:text="شماره تلفن همراه خود را وارد کن"
         android:textColor="#0e42a7"
         android:textSize="14sp"
         android:visibility="gone" />

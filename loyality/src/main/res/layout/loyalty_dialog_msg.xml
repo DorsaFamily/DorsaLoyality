@@ -25,7 +25,9 @@
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:textColor="@color/loyalty_colorPrimary"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColorLink="@color/loyalty_link"
+            />
 
         <RelativeLayout
             android:id="@+id/rel_btns"

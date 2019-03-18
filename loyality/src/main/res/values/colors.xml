@@ -6,4 +6,5 @@
     <color name="loyalty_colorAccent">#ea2d29</color>
     <color name="loyalty_colorWhite">#FFFFFF</color>
     <color name="loyalty_dark_trans">#80bebebe</color>
+    <color name="loyalty_link">#2196F3</color>
 </resources>

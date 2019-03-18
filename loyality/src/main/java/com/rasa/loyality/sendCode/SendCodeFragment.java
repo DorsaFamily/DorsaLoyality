@@ -32,6 +32,8 @@ public class SendCodeFragment extends Fragment {
     private ProgressDialog pDialog;
 
 
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -42,6 +44,7 @@ public class SendCodeFragment extends Fragment {
 
         btnSend = pView.findViewById(R.id.loyalty_btn_confirm);
         btnCancel = pView.findViewById(R.id.loyalty_btn_cancel);
+
 
         pDialog=new ProgressDialog(getContext());
         pDialog.setMessage("در حال ارسال کد ...");
@@ -97,6 +100,8 @@ public class SendCodeFragment extends Fragment {
             }).usedCode(textCode.getText().toString());
         }
     }
+
+
 
 
     @Override

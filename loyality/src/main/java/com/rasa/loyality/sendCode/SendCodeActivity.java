@@ -74,13 +74,16 @@ public class SendCodeActivity extends AppCompatActivity implements SendCodeFragm
                         }
                     });
                 } else {
-                    dialogMessage.setOnClickOk("کد جدید", new DialogMessage.OnClick() {
+                    dialogMessage.setMessage(getString(R.string.loyality_tamdid_code));
+                    dialogMessage.setShowOkButton(false);
+
+                 /*   dialogMessage.setOnClickOk("کد جدید", new DialogMessage.OnClick() {
                         @Override
                         public void onClicked() {
                             spHelper.setLoyaltyCode("");
                             requestNewCode();
                         }
-                    });
+                    });*/
                 }
                 pDialog.cancel();
                 dialogMessage.setCancelable(false);
@@ -99,8 +102,26 @@ public class SendCodeActivity extends AppCompatActivity implements SendCodeFragm
 
     @Override
     public void onSuccess() {
-        setResult(Activity.RESULT_OK);
-        finish();
+
+        if (getSupportFragmentManager().findFragmentByTag(TAG_FRG_SEND_CODE) != null) {
+            getSupportFragmentManager().beginTransaction()
+                    .remove(getSupportFragmentManager().findFragmentByTag(TAG_FRG_SEND_CODE))
+                    .commitAllowingStateLoss();
+        }
+
+
+        DialogMessage dialogMessage = new DialogMessage(this);
+        dialogMessage.setMessage("از حالا میتونی به مدت یک ماه از اپلیکیشن فندقستان به صورت رایگان استفاده کنی");
+        dialogMessage.setCancelable(false);
+        dialogMessage.setShowCancelButton(false);
+        dialogMessage.setOnClickOk("تایید", new DialogMessage.OnClick() {
+            @Override
+            public void onClicked() {
+                setResult(Activity.RESULT_OK);
+                finish();
+            }
+        });
+        dialogMessage.show();
     }
 
     @Override

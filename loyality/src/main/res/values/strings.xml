@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Loyality</string>
+    <string name="loyality_tamdid_code">
+        کاربر عزیز مهلت استفاده از هدیه رایگان به پایان رسیده است.
+        \n
+برای داشتن دوباره فندقستان روی لینک زیر کلیک کنید.
+        \n
+http://2rsa.ir/fandoghestan.html
+        \n
+    </string>
 </resources>
